@@ -1,0 +1,13 @@
+{
+  "name": "YOUR-WORKER-NAME",
+  "main": "worker.js",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": "./",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "kv_namespaces": [
+    { "binding": "PROGRESS", "id": "PASTE-YOUR-KV-NAMESPACE-ID-HERE" }
+  ]
+}

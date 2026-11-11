@@ -1,0 +1,7 @@
+worker.js
+api.js
+wrangler.jsonc
+.assetsignore
+SETUP-ACCOUNTS.md
+node_modules
+.git

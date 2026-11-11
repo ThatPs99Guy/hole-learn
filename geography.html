@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Geography - Hole Learning Hub</title>
+<meta name="description" content="Geography lessons and practice: continents and oceans, latitude and longitude, reading maps, and world capitals.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html">Hole Learning Hub</a>
+  <nav aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="grades.html">Grades</a>
+    <a href="math.html">Math</a>
+    <a href="geography.html" aria-current="page">Geography</a>
+    <a href="language-arts.html">Language Arts</a>
+    <a href="about.html">About</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <h1>Geography</h1>
+  <p class="lead">Where things are, and how we describe where they are.</p>
+  <ul class="toc">
+    <li><a href="#world">Continents and oceans</a></li>
+    <li><a href="#coords">Latitude and longitude</a></li>
+    <li><a href="#maps">Reading a map</a></li>
+    <li><a href="#capitals">Capitals</a></li>
+    <li><a href="#practice">Practice quiz</a></li>
+  </ul>
+
+  <section id="world">
+    <h2>1. Continents and oceans</h2>
+    <div class="box">
+      <h3>The 7 continents</h3>
+      <p>Asia, Africa, North America, South America, Antarctica, Europe, and Australia (sometimes called Oceania). Asia is the largest by area and population. Australia is the smallest.</p>
+      <h3>The 5 oceans</h3>
+      <p>Pacific, Atlantic, Indian, Southern, and Arctic. The <strong>Pacific</strong> is the largest and deepest, covering more area than all the land on Earth combined.</p>
+      <div class="example">
+        <strong>Fun fact:</strong> The Sahara, the world's largest hot desert, is in northern Africa.
+      </div>
+    </div>
+  </section>
+
+  <section id="coords">
+    <h2>2. Latitude and longitude</h2>
+    <div class="box">
+      <p>Together, latitude and longitude give an address for any point on Earth.</p>
+      <table>
+        <tr><th></th><th>Latitude</th><th>Longitude</th></tr>
+        <tr><td>Also called</td><td>Parallels</td><td>Meridians</td></tr>
+        <tr><td>Lines run</td><td>East to west (parallel to the equator)</td><td>North to south (pole to pole)</td></tr>
+        <tr><td>Measures</td><td>Distance north or south of the <strong>equator</strong> (0°)</td><td>Distance east or west of the <strong>prime meridian</strong> (0°)</td></tr>
+        <tr><td>Range</td><td>0° to 90° N or S</td><td>0° to 180° E or W</td></tr>
+      </table>
+      <p>The equator splits Earth into the Northern and Southern Hemispheres. The prime meridian, which passes through Greenwich, England, helps split it into the Eastern and Western Hemispheres.</p>
+      <div class="example">
+        <strong>Example:</strong> 40° N, 74° W is near New York City: 40 degrees north of the equator and 74 degrees west of the prime meridian.
+      </div>
+    </div>
+  </section>
+
+  <section id="maps">
+    <h2>3. Reading a map</h2>
+    <div class="box">
+      <ul>
+        <li><strong>Compass rose:</strong> shows the directions north, south, east, and west.</li>
+        <li><strong>Scale:</strong> tells you how a distance on the map matches real distance, such as 1 inch = 100 miles.</li>
+        <li><strong>Legend (key):</strong> explains the symbols and colors used.</li>
+        <li><strong>Title:</strong> tells you what the map is showing.</li>
+      </ul>
+      <div class="example">
+        <strong>Example:</strong> If the scale is 1 inch = 50 miles and two cities are 3 inches apart on the map, they are about 3 × 50 = <strong>150 miles</strong> apart.
+      </div>
+      <h3>Five regions of the United States</h3>
+      <p>Northeast, Southeast, Midwest, Southwest, and West. Geographers sometimes group the states differently, so check which grouping your class uses.</p>
+    </div>
+  </section>
+
+  <section id="capitals">
+    <h2>4. Capitals</h2>
+    <div class="box">
+      <p>A capital is not always the biggest city. Watch for these common mix-ups.</p>
+      <table>
+        <tr><th>Place</th><th>Capital</th><th>Often mistaken for</th></tr>
+        <tr><td>Australia</td><td>Canberra</td><td>Sydney</td></tr>
+        <tr><td>Canada</td><td>Ottawa</td><td>Toronto</td></tr>
+        <tr><td>Brazil</td><td>Brasília</td><td>Rio de Janeiro</td></tr>
+        <tr><td>California</td><td>Sacramento</td><td>Los Angeles</td></tr>
+        <tr><td>New York (state)</td><td>Albany</td><td>New York City</td></tr>
+        <tr><td>Kenya</td><td>Nairobi</td><td></td></tr>
+        <tr><td>Japan</td><td>Tokyo</td><td></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="practice">
+    <h2>Practice quiz</h2>
+    <p>Tap an answer. You will see right away whether it is correct and why.</p>
+    <div id="quiz"></div>
+  </section>
+</main>
+
+<footer class="site"><div class="wrap">Hole Learning Hub is a free study resource.</div></footer>
+
+<script>
+window.QUIZ = [
+  { q: "Which ocean is the largest?",
+    options: ["Atlantic", "Indian", "Pacific", "Arctic"],
+    answer: 2,
+    why: "The Pacific Ocean is the largest and deepest." },
+  { q: "What is the capital of Australia?",
+    options: ["Sydney", "Canberra", "Melbourne", "Perth"],
+    answer: 1,
+    why: "Canberra is the capital. Sydney is the largest city, which is why it is often guessed." },
+  { q: "Lines of latitude run in which direction?",
+    options: ["North to south", "East to west", "Diagonally", "They curve toward the poles"],
+    answer: 1,
+    why: "Lines of latitude (parallels) run east to west, parallel to the equator." },
+  { q: "The prime meridian (0° longitude) passes through which place?",
+    options: ["Paris", "New York", "Greenwich, near London", "Cairo"],
+    answer: 2,
+    why: "The prime meridian passes through Greenwich, England." },
+  { q: "On which continent is the Sahara Desert?",
+    options: ["Asia", "Africa", "Australia", "South America"],
+    answer: 1,
+    why: "The Sahara covers much of northern Africa." },
+  { q: "A map scale says 1 inch = 50 miles. Two towns are 4 inches apart on the map. About how far apart are they?",
+    options: ["54 miles", "100 miles", "200 miles", "250 miles"],
+    answer: 2,
+    why: "4 inches × 50 miles per inch = 200 miles." },
+  { q: "What is the capital of Canada?",
+    options: ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+    answer: 3,
+    why: "Ottawa is the capital. Toronto is the largest city." }
+];
+</script>
+<script src="quiz.js"></script>
+<script src="bank.js"></script>
+<script src="bank3.js"></script>
+<script src="subjects.js"></script>
+<script src="ixl.js"></script>
+<script src="account.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

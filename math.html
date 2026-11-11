@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Math - Hole Learning Hub</title>
+<meta name="description" content="Math lessons and practice: fractions, percents, order of operations, area and perimeter, and equations.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html">Hole Learning Hub</a>
+  <nav aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="grades.html">Grades</a>
+    <a href="math.html" aria-current="page">Math</a>
+    <a href="geography.html">Geography</a>
+    <a href="language-arts.html">Language Arts</a>
+    <a href="about.html">About</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <h1>Math</h1>
+  <p class="lead">Five core skills with worked examples, then a practice quiz.</p>
+  <ul class="toc">
+    <li><a href="#fractions">Fractions</a></li>
+    <li><a href="#percents">Percents</a></li>
+    <li><a href="#order">Order of operations</a></li>
+    <li><a href="#geometry">Area and perimeter</a></li>
+    <li><a href="#equations">Equations</a></li>
+    <li><a href="#practice">Practice quiz</a></li>
+  </ul>
+
+  <section id="fractions">
+    <h2>1. Fractions</h2>
+    <div class="box">
+      <h3>Adding and subtracting</h3>
+      <p>Fractions need a <strong>common denominator</strong> (the same bottom number) before you add or subtract. Change the fractions, then work with the tops only.</p>
+      <div class="example">
+        <strong>Example:</strong> 1/2 + 1/3<br>
+        Common denominator is 6: 3/6 + 2/6 = <strong>5/6</strong>
+      </div>
+      <h3>Multiplying</h3>
+      <p>Multiply the tops, multiply the bottoms, then simplify.</p>
+      <div class="example">
+        <strong>Example:</strong> 2/3 × 3/4 = 6/12 = <strong>1/2</strong>
+      </div>
+      <h3>Dividing</h3>
+      <p>Keep the first fraction, flip the second (use its <em>reciprocal</em>), and multiply.</p>
+      <div class="example">
+        <strong>Example:</strong> 1/2 ÷ 1/4 = 1/2 × 4/1 = 4/2 = <strong>2</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="percents">
+    <h2>2. Percents</h2>
+    <div class="box">
+      <p>"Percent" means "out of 100." To find a percent of a number, change the percent to a decimal and multiply.</p>
+      <div class="example">
+        <strong>Example:</strong> What is 25% of 80?<br>
+        25% = 0.25, and 0.25 × 80 = <strong>20</strong>
+      </div>
+      <h3>Percent change</h3>
+      <p><code>percent change = (new − old) ÷ old × 100</code></p>
+      <div class="example">
+        <strong>Example:</strong> A price goes from $50 to $60.<br>
+        (60 − 50) ÷ 50 = 0.2, so it is a <strong>20% increase</strong>.
+      </div>
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>3. Order of operations</h2>
+    <div class="box">
+      <p>Work in this order, left to right within each step:</p>
+      <ol>
+        <li><strong>P</strong>arentheses</li>
+        <li><strong>E</strong>xponents</li>
+        <li><strong>M</strong>ultiplication and <strong>D</strong>ivision (left to right)</li>
+        <li><strong>A</strong>ddition and <strong>S</strong>ubtraction (left to right)</li>
+      </ol>
+      <div class="example">
+        <strong>Example:</strong> 3 + 4 × 2<br>
+        Multiply first: 3 + 8 = <strong>11</strong><br><br>
+        <strong>With parentheses:</strong> (3 + 4) × 2 = 7 × 2 = <strong>14</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="geometry">
+    <h2>4. Area and perimeter</h2>
+    <div class="box">
+      <table>
+        <tr><th>Shape</th><th>Area</th><th>Perimeter / circumference</th></tr>
+        <tr><td>Rectangle</td><td>length × width</td><td>2 × (length + width)</td></tr>
+        <tr><td>Triangle</td><td>1/2 × base × height</td><td>add the three sides</td></tr>
+        <tr><td>Circle</td><td>π × r²</td><td>2 × π × r</td></tr>
+      </table>
+      <div class="example">
+        <strong>Example:</strong> A rectangle is 5 by 3.<br>
+        Area = 5 × 3 = <strong>15</strong> square units. Perimeter = 2 × (5 + 3) = <strong>16</strong> units.
+      </div>
+      <p>Area is measured in <em>square</em> units, and perimeter in plain units. That is a common thing to mix up.</p>
+    </div>
+  </section>
+
+  <section id="equations">
+    <h2>5. Solving equations</h2>
+    <div class="box">
+      <p>Whatever you do to one side of an equation, do to the other side. Undo operations in reverse order: first add or subtract, then multiply or divide.</p>
+      <div class="example">
+        <strong>Example:</strong> 2x + 5 = 17<br>
+        Subtract 5 from both sides: 2x = 12<br>
+        Divide both sides by 2: <strong>x = 6</strong><br>
+        Check: 2(6) + 5 = 17 ✓
+      </div>
+    </div>
+  </section>
+
+  <section id="practice">
+    <h2>Practice quiz</h2>
+    <p>Tap an answer. You will see right away whether it is correct and why.</p>
+    <div id="quiz"></div>
+  </section>
+</main>
+
+<footer class="site"><div class="wrap">Hole Learning Hub is a free study resource.</div></footer>
+
+<script>
+window.QUIZ = [
+  { q: "What is 3/4 + 1/8?",
+    options: ["4/12", "7/8", "3/32", "1"],
+    answer: 1,
+    why: "3/4 = 6/8, and 6/8 + 1/8 = 7/8." },
+  { q: "What is 15% of 200?",
+    options: ["15", "20", "30", "45"],
+    answer: 2,
+    why: "0.15 × 200 = 30." },
+  { q: "What is 8 + 6 ÷ 2 × 3?",
+    options: ["21", "17", "11", "9"],
+    answer: 1,
+    why: "Divide and multiply left to right first: 6 ÷ 2 = 3, then 3 × 3 = 9. Then 8 + 9 = 17." },
+  { q: "A triangle has a base of 10 and a height of 6. What is its area?",
+    options: ["60", "16", "30", "32"],
+    answer: 2,
+    why: "Area = 1/2 × 10 × 6 = 30." },
+  { q: "Solve for x: 3x − 4 = 11",
+    options: ["x = 5", "x = 7", "x = 3", "x = 15"],
+    answer: 0,
+    why: "Add 4 to both sides to get 3x = 15, then divide by 3 to get x = 5." },
+  { q: "What is 2/5 × 3/4 in simplest form?",
+    options: ["5/9", "6/9", "3/10", "1/2"],
+    answer: 2,
+    why: "2 × 3 = 6 and 5 × 4 = 20, so 6/20. Dividing top and bottom by 2 gives 3/10." }
+];
+</script>
+<script src="quiz.js"></script>
+<script src="bank.js"></script>
+<script src="bank3.js"></script>
+<script src="subjects.js"></script>
+<script src="ixl.js"></script>
+<script src="account.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>
