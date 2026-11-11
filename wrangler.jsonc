@@ -1,5 +1,5 @@
 {
-  "name": "YOUR-WORKER-NAME",
+  "name": "progress",
   "main": "worker.js",
   "compatibility_date": "2025-01-01",
   "assets": {
@@ -8,6 +8,6 @@
     "run_worker_first": ["/api/*"]
   },
   "kv_namespaces": [
-    { "binding": "PROGRESS", "id": "PASTE-YOUR-KV-NAMESPACE-ID-HERE" }
+    { "binding": "PROGRESS", "id": "f2c0075ee3cb4467b5bd95efba30bfb3" }
   ]
 }
